@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Match Deluxe PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+<!-- LOGIN -->
+<div id="loginPage" class="card">
+    <h2>💖 Login</h2>
+    <input type="text" id="playerName" placeholder="Enter your name"><br>
+
+    <h3>Select Avatar</h3>
+    <div id="avatars">
+        <span onclick="selectAvatar('👧')">👧</span>
+        <span onclick="selectAvatar('👩')">👩</span>
+        <span onclick="selectAvatar('🧕')">🧕</span>
+        <span onclick="selectAvatar('👩‍🎓')">👩‍🎓</span>
+    </div>
+
+    <p id="chosenAvatar">Avatar: 👧</p>
+    <button onclick="startGame()">Start</button>
+</div>
+
+<!-- GAME -->
+<div id="gamePage" class="card" style="display:none;">
+    <h2 id="playerDisplay"></h2>
+
+    <p id="info"></p>
+    <p id="highScore"></p>
+
+    <select onchange="changeTheme(this.value)">
+        <option value="pink">💖 Pink</option>
+        <option value="purple">💜 Purple</option>
+        <option value="dark">🌙 Dark</option>
+    </select>
+
+    <div id="grid"></div>
+
+    <button onclick="logout()">Logout</button>
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboardPage" class="card" style="display:none;">
+    <h2>🏆 Leaderboard</h2>
+    <ul id="leaderboardList"></ul>
+    <button onclick="backToGame()">Back</button>
+</div>
+
+<audio id="flipSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+<audio id="matchSound" src="https://www.soundjay.com/button/sounds/button-09.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

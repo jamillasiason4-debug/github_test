@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+}
+
+.pink { background: linear-gradient(to right, pink, hotpink); }
+.purple { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+.dark { background: #222; }
+
+.card {
+    margin: 30px auto;
+    padding: 20px;
+    width: 350px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+button, select, input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background: white;
+    color: hotpink;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#avatars span {
+    font-size: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#grid {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.cardBox {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 12px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    cursor: pointer;
+}
+
+.revealed {
+    color: black;
+}
